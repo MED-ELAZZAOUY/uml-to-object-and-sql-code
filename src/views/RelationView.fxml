@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RelationController">
+    <left>
+        <AnchorPane prefHeight="500.0" prefWidth="247.0" style="-fx-background-color: #0598FF;" BorderPane.alignment="CENTER">
+            <children>
+                <Button layoutX="61.0" layoutY="148.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="116.0" text="Add Class">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Button>
+                <Button layoutX="61.0" layoutY="311.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="116.0" text="Add Parameter">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Button>
+                <Button layoutX="61.0" layoutY="256.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="116.0" text="Add Method">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Button>
+                <Button layoutX="61.0" layoutY="202.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="116.0" text="Add Attribute">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Button>
+            <Button layoutX="60.0" layoutY="368.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="116.0" text="Add Association">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            </children></AnchorPane>
+    </left>
+    <right>
+        <AnchorPane accessibleRoleDescription="k&#10;y&#10;z&#10;" prefHeight="500.0" prefWidth="453.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+            <children>
+            <Text fill="#0598ff" layoutX="91.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  Classe Name  :" wrappingWidth="120.880859375">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+                <MenuButton ellipsisString="kkk" layoutX="228.0" layoutY="259.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="142.0" style="-fx-background-color: #0598FF;" text="Empty" textAlignment="CENTER" textFill="WHITE">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Association Simple" />
+                        <MenuItem mnemonicParsing="false" text="Composition" />
+                  <MenuItem mnemonicParsing="false" text="Aggregation" />
+                    </items>
+                </MenuButton>
+                <Text fill="#0598ff" layoutX="92.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type of Relation  :" wrappingWidth="120.880859375">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Text>
+                <FontAwesomeIcon fx:id="btnClose" glyphName="CLOSE" layoutX="438.0" layoutY="13.0" onMouseClicked="#handleClose" />
+            <MenuButton ellipsisString="kkk" layoutX="228.0" layoutY="322.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="142.0" style="-fx-background-color: #0598FF;" text="Aucun" textAlignment="CENTER" textFill="WHITE">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="A" />
+                  <MenuItem mnemonicParsing="false" text="B" />
+                  <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+               </items>
+            </MenuButton>
+            <Text fill="#0598ff" layoutX="92.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  Associated To  :" wrappingWidth="120.880859375">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <MenuButton ellipsisString="kkk" layoutX="227.0" layoutY="197.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="142.0" style="-fx-background-color: #0598FF;" text="Aucun" textAlignment="CENTER" textFill="WHITE">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="A" />
+                  <MenuItem mnemonicParsing="false" text="B" />
+                  <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+               </items>
+            </MenuButton>
+            </children>
+        </AnchorPane>
+    </right>
+</BorderPane>
