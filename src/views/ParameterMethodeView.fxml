@@ -14,27 +14,27 @@
     <left>
         <AnchorPane prefHeight="500.0" prefWidth="247.0" style="-fx-background-color: #0598FF;" BorderPane.alignment="CENTER">
             <children>
-                <Button layoutX="61.0" layoutY="148.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="116.0" text="Add Class">
+                <Button fx:id="btnAddClass" layoutX="61.0" layoutY="148.0" mnemonicParsing="false" onMouseClicked="#handleAddClass" prefHeight="27.0" prefWidth="116.0" text="Add Class">
                     <font>
                         <Font size="13.0" />
                     </font>
                 </Button>
-                <Button layoutX="61.0" layoutY="311.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="116.0" text="Add Parameter">
+                <Button fx:id="btnAddPatameter" layoutX="61.0" layoutY="311.0" mnemonicParsing="false" onMouseClicked="#handleAddParameter" prefHeight="27.0" prefWidth="116.0" text="Add Parameter">
                     <font>
                         <Font size="13.0" />
                     </font>
                 </Button>
-                <Button layoutX="61.0" layoutY="256.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="116.0" text="Add Method">
+                <Button fx:id="btnAddMethod" layoutX="61.0" layoutY="256.0" mnemonicParsing="false" onMouseClicked="#handleAddMethod" prefHeight="27.0" prefWidth="116.0" text="Add Method">
                     <font>
                         <Font size="13.0" />
                     </font>
                 </Button>
-                <Button layoutX="61.0" layoutY="202.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="116.0" text="Add Attribute">
+                <Button fx:id="btnAddAttribut" layoutX="61.0" layoutY="202.0" mnemonicParsing="false" onMouseClicked="#handleAddAttribut" prefHeight="27.0" prefWidth="116.0" text="Add Attribute">
                     <font>
                         <Font size="13.0" />
                     </font>
                 </Button>
-            <Button layoutX="61.0" layoutY="369.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="116.0" text="Add Association">
+            <Button fx:id="btnAddAssociation" layoutX="61.0" layoutY="369.0" mnemonicParsing="false" onMouseClicked="#handleAddAssociation" prefHeight="27.0" prefWidth="116.0" text="Add Association">
                <font>
                   <Font size="13.0" />
                </font>
@@ -57,12 +57,13 @@
                         <MenuItem mnemonicParsing="false" text="String" />
                     </items>
                 </MenuButton>
-                <Text fill="#0598ff" layoutX="130.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Return Type :" wrappingWidth="90.880859375">
+                <Text fill="#0598ff" layoutX="130.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Parameter Type :" wrappingWidth="90.880859375">
                     <font>
                         <Font name="System Bold" size="14.0" />
                     </font>
                 </Text>
                 <FontAwesomeIcon fx:id="btnClose" glyphName="CLOSE" layoutX="437.0" layoutY="13.0" onMouseClicked="#handleClose" />
+                <FontAwesomeIcon fx:id="btnNext" fill="#0598ff" glyphName="ANGLE_RIGHT" layoutX="433.0" layoutY="488.0" onMouseClicked="#handleNext" size="2.8em" />
             <MenuButton ellipsisString="kkk" layoutX="228.0" layoutY="248.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="142.0" style="-fx-background-color: #0598ff;" text="Empty" textAlignment="CENTER" textFill="WHITE">
                <items>
                   <MenuItem mnemonicParsing="false" text="int" />
