@@ -57,7 +57,7 @@
                         <MenuItem mnemonicParsing="false" text="String" />
                     </items>
                 </MenuButton>
-                <Text fill="#0598ff" layoutX="130.0" layoutY="390.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Parameter Type :" wrappingWidth="90.880859375">
+                <Text fill="#0598ff" layoutX="96.0" layoutY="389.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Parameter Type :" wrappingWidth="124.880859375">
                     <font>
                         <Font name="System Bold" size="14.0" />
                     </font>

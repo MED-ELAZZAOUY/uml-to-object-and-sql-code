@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="77338bda-d7c8-4f4d-bd72-c2c4c6f251aa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/AttributController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/AttributController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/ClassController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/ClassController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Class.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/ParameterMethodeView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/ParameterMethodeView.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +75,9 @@
       <workItem from="1686233431746" duration="11060000" />
       <workItem from="1686313898530" duration="17558000" />
       <workItem from="1686372107463" duration="14461000" />
-      <workItem from="1686398187556" duration="11898000" />
+      <workItem from="1686398187556" duration="12592000" />
+      <workItem from="1686428836359" duration="2348000" />
+      <workItem from="1686431910785" duration="2011000" />
     </task>
     <servers />
   </component>

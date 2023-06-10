@@ -49,8 +49,6 @@ public class ClassController implements Initializable {
     void handleNext(MouseEvent event) {
         if (event.getSource() == btnNext){
             try {
-                Utils.classes.add(new Class("hello"));
-                System.out.println(Utils.classes.get(0).name);// Test ArrayList
                 Parent root = FXMLLoader.load(getClass().getResource("../views/AttributView.fxml"));
                 Scene scene = new Scene(root);
                 Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
