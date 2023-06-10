@@ -6,8 +6,13 @@ import javafx.scene.Scene;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import models.Class;
+import utils.Utils;
+
+import java.util.ArrayList;
 
 public class Main extends Application {
+
 
     //define offsets
     private double xOffset = 0;
@@ -39,6 +44,7 @@ public class Main extends Application {
         primaryStage.show();
     }
     public static void main(String[] args) {
+        Utils.classes = new ArrayList<Class>();
         launch(args);
     }
 

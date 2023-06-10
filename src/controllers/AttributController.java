@@ -1,5 +1,6 @@
 package controllers;
 
+
 import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -11,12 +12,16 @@ import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import models.Class;
+
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class AttributController implements Initializable {
+
 
     @FXML
     private FontAwesomeIcon btnClose;
@@ -57,7 +62,6 @@ public class AttributController implements Initializable {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-
         }
     }
 

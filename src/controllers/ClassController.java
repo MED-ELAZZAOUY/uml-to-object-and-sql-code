@@ -11,6 +11,8 @@ import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import models.Class;
+import utils.Utils;
 
 import java.io.IOException;
 import java.net.URL;
@@ -41,15 +43,14 @@ public class ClassController implements Initializable {
     private Button btnAddPatameter;
 
 
-
-
-
     //--------AnchorPane_Right_Event-----------------
 
     @FXML
     void handleNext(MouseEvent event) {
         if (event.getSource() == btnNext){
             try {
+                Utils.classes.add(new Class("hello"));
+                System.out.println(Utils.classes.get(0).name);// Test ArrayList
                 Parent root = FXMLLoader.load(getClass().getResource("../views/AttributView.fxml"));
                 Scene scene = new Scene(root);
                 Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
