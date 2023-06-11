@@ -8,6 +8,8 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
@@ -42,12 +44,30 @@ public class ClassController implements Initializable {
     @FXML
     private Button btnAddPatameter;
 
+    @FXML
+    private TextField classNameTF;
+
+    @FXML
+    private ComboBox<String> superClassCB;
+
+    @FXML
+    private ComboBox<String> classTypeCB;
+
+
 
     //--------AnchorPane_Right_Event-----------------
 
     @FXML
     void handleNext(MouseEvent event) {
         if (event.getSource() == btnNext){
+            // if the TextField not Empty
+            if(!classNameTF.getText().isEmpty()){
+                String className = classNameTF.getText();
+                String superClassName = superClassCB.getSelectionModel().getSelectedItem();
+                String typeClassName = classTypeCB.getSelectionModel().getSelectedItem();
+
+                Utils.classes.add(new Class(className,superClassName, typeClassName));
+            }
             try {
                 Parent root = FXMLLoader.load(getClass().getResource("../views/AttributView.fxml"));
                 Scene scene = new Scene(root);
@@ -168,6 +188,9 @@ public class ClassController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        Utils.classes.forEach(cls->{
+            superClassCB.getItems().add(cls.getName());
+        });
 
     }
 
