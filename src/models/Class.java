@@ -9,13 +9,14 @@ public class Class {
     private String superClass = "";
 
     private String type = "";
+
+    private ArrayList<Attribut> attributs = new ArrayList<Attribut>();
+
+    private ArrayList<Method> methods= new ArrayList<Method>();
+
     public Class () {}
     public Class (String name){
         this.name=name;
-    }
-
-    public String getName() {
-        return name;
     }
 
     public Class (String name, String superClass){
@@ -29,6 +30,25 @@ public class Class {
         this.type = type;
     }
 
+    public ArrayList<Attribut> getAttributs() {
+        return attributs;
+    }
+
+    public void setAttributs(ArrayList<Attribut> attributs) {
+        this.attributs = attributs;
+    }
+
+    public ArrayList<Method> getMethods() {
+        return methods;
+    }
+
+    public void setMethods(ArrayList<Method> methods) {
+        this.methods = methods;
+    }
+
+    public String getName() {
+        return name;
+    }
 
     public void setName(String name) {
         this.name = name;

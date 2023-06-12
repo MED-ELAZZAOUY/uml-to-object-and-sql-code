@@ -97,6 +97,12 @@ public class ClassController implements Initializable {
     @FXML
     void handleAddAttribut(MouseEvent event) {
         if (event.getSource() == btnAddAttribut){
+            if(!classNameTF.getText().isEmpty()){
+                String className = classNameTF.getText();
+                String superClassName = superClassCB.getSelectionModel().getSelectedItem();
+                String typeClassName = classTypeCB.getSelectionModel().getSelectedItem();
+                Utils.classes.add(new Class(className,superClassName, typeClassName));
+            }
             try {
                 Parent root = FXMLLoader.load(getClass().getResource("../views/AttributView.fxml"));
                 Scene scene = new Scene(root);
@@ -115,6 +121,12 @@ public class ClassController implements Initializable {
     @FXML
     void handleAddAssociation(MouseEvent event) {
         if (event.getSource() == btnAddAssociation){
+            if(!classNameTF.getText().isEmpty()){
+                String className = classNameTF.getText();
+                String superClassName = superClassCB.getSelectionModel().getSelectedItem();
+                String typeClassName = classTypeCB.getSelectionModel().getSelectedItem();
+                Utils.classes.add(new Class(className,superClassName, typeClassName));
+            }
             try {
                 Parent root = FXMLLoader.load(getClass().getResource("../views/RelationView.fxml"));
                 Scene scene = new Scene(root);
@@ -133,6 +145,12 @@ public class ClassController implements Initializable {
     @FXML
     void handleAddClass(MouseEvent event) {
         if (event.getSource() == btnAddClass){
+            if(!classNameTF.getText().isEmpty()){
+                String className = classNameTF.getText();
+                String superClassName = superClassCB.getSelectionModel().getSelectedItem();
+                String typeClassName = classTypeCB.getSelectionModel().getSelectedItem();
+                Utils.classes.add(new Class(className,superClassName, typeClassName));
+            }
             try {
                 Parent root = FXMLLoader.load(getClass().getResource("../views/ClassView.fxml"));
                 Scene scene = new Scene(root);
@@ -151,6 +169,12 @@ public class ClassController implements Initializable {
     @FXML
     void handleAddMethod(MouseEvent event) {
         if (event.getSource() == btnAddMethod){
+            if(!classNameTF.getText().isEmpty()){
+                String className = classNameTF.getText();
+                String superClassName = superClassCB.getSelectionModel().getSelectedItem();
+                String typeClassName = classTypeCB.getSelectionModel().getSelectedItem();
+                Utils.classes.add(new Class(className,superClassName, typeClassName));
+            }
             try {
                 Parent root = FXMLLoader.load(getClass().getResource("../views/MethodeView.fxml"));
                 Scene scene = new Scene(root);
@@ -169,6 +193,12 @@ public class ClassController implements Initializable {
     @FXML
     void handleAddParameter(MouseEvent event) {
         if (event.getSource() == btnAddPatameter){
+            if(!classNameTF.getText().isEmpty()){
+                String className = classNameTF.getText();
+                String superClassName = superClassCB.getSelectionModel().getSelectedItem();
+                String typeClassName = classTypeCB.getSelectionModel().getSelectedItem();
+                Utils.classes.add(new Class(className,superClassName, typeClassName));
+            }
             try {
                 Parent root = FXMLLoader.load(getClass().getResource("../views/ParameterMethodeView.fxml"));
                 Scene scene = new Scene(root);
@@ -188,10 +218,9 @@ public class ClassController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        Utils.classes.forEach(cls->{
-            superClassCB.getItems().add(cls.getName());
+        Utils.classes.forEach(aClass->{
+            superClassCB.getItems().add(aClass.getName());
         });
 
     }
-
 }

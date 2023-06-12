@@ -9,7 +9,11 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
 
+<?import javafx.scene.control.ComboBox?>
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MethodController">
     <left>
         <AnchorPane prefHeight="500.0" prefWidth="247.0" style="-fx-background-color: #0598FF;" BorderPane.alignment="CENTER">
@@ -44,19 +48,25 @@
     <right>
         <AnchorPane accessibleRoleDescription="k&#10;y&#10;z&#10;" prefHeight="500.0" prefWidth="453.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
             <children>
-                <TextField layoutX="227.0" layoutY="194.0" promptText="name of method" style="-fx-background-color: transparent; -fx-border-color: #0598FF; -fx-border-width: 0px 0px 2px 0px;" />
+                <TextField fx:id="tfMethodName" layoutX="227.0" layoutY="194.0" promptText="name of method" style="-fx-background-color: transparent; -fx-border-color: #0598FF; -fx-border-width: 0px 0px 2px 0px;" />
                 <Text fill="#0598ff" layoutX="127.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Name  :" wrappingWidth="90.880859375">
                     <font>
                         <Font name="System Bold" size="14.0" />
                     </font>
                 </Text>
-                <MenuButton ellipsisString="kkk" layoutX="228.0" layoutY="270.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="142.0" style="-fx-background-color: #0598FF;" text="Empty" textAlignment="CENTER" textFill="WHITE">
+                <ComboBox  fx:id="cbxReturnType" layoutX="228.0" layoutY="270.0"  prefHeight="25.0" prefWidth="142.0" style="-fx-background-color: #0598FF;" >
                     <items>
-                        <MenuItem mnemonicParsing="false" text="int" />
-                        <MenuItem mnemonicParsing="false" text="float" />
-                        <MenuItem mnemonicParsing="false" text="String" />
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="String"/>
+                            <String fx:value="void"/>
+                            <String fx:value="int"/>
+                            <String fx:value="float"/>
+                            <String fx:value="double"/>
+                            <String fx:value="long"/>
+                            <String fx:value="boolean"/>
+                        </FXCollections>
                     </items>
-                </MenuButton>
+                </ComboBox>
                 <Text fill="#0598ff" layoutX="124.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Return Type :" wrappingWidth="90.880859375">
                     <font>
                         <Font name="System Bold" size="14.0" />
@@ -67,22 +77,20 @@
                         <Font name="System Bold" size="14.0" />
                     </font>
                 </Text>
-                <MenuButton ellipsisString="kkk" layoutX="228.0" layoutY="345.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="142.0" style="-fx-background-color: #0598FF;" text="Empty" textAlignment="CENTER" textFill="WHITE">
+                <ComboBox fx:id="cbxVisibility" layoutX="228.0" layoutY="345.0" prefHeight="25.0" prefWidth="142.0" style="-fx-background-color: #0598FF;" >
                     <items>
-                        <MenuItem mnemonicParsing="false" text="Public" />
-                        <MenuItem mnemonicParsing="false" text="Protected" />
-                        <MenuItem mnemonicParsing="false" text="Private" />
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="Public"/>
+                            <String fx:value="Private"/>
+                            <String fx:value="Static"/>
+                        </FXCollections>
                     </items>
-                </MenuButton>
+                </ComboBox>
                 <FontAwesomeIcon fx:id="btnClose" glyphName="CLOSE" layoutX="438.0" layoutY="13.0" onMouseClicked="#handleClose" />
                 <FontAwesomeIcon fx:id="btnNext" fill="#0598ff" glyphName="ANGLE_RIGHT" layoutX="433.0" layoutY="488.0" onMouseClicked="#handleNext" size="2.8em" />
-            <MenuButton ellipsisString="kkk" layoutX="228.0" layoutY="143.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="142.0" style="-fx-background-color: #0598FF;" text="Empty" textAlignment="CENTER" textFill="WHITE">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="A" />
-                  <MenuItem mnemonicParsing="false" text="B" />
-                  <MenuItem mnemonicParsing="false" text="Unspecified Action" />
-               </items>
-            </MenuButton>
+            <ComboBox fx:id="cbxClassName" layoutX="228.0" layoutY="143.0" prefHeight="25.0" prefWidth="142.0" style="-fx-background-color: #0598FF;">
+
+            </ComboBox>
             <Text fill="#0598ff" layoutX="124.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Class Name :" wrappingWidth="90.880859375">
                <font>
                   <Font name="System Bold" size="14.0" />

@@ -1,13 +1,12 @@
 package models;
 
-class Parameter {
+
+public class Parameter {
 
     private String name;
     private String type;
 
-    public Parameter() {
-
-    }
+    public Parameter() { }
 
     public Parameter(String name) {
         this.name = name;

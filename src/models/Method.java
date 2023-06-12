@@ -1,9 +1,13 @@
 package models;
 
+import java.util.ArrayList;
+
 public class Method {
     private String name;
     private String returnType;
     private String vsibility;
+
+    private ArrayList<Parameter> parameters = new ArrayList<Parameter>();
 
     public Method () {}
 
@@ -20,6 +24,14 @@ public class Method {
         this.name = name;
         this.returnType = returnType;
         this.vsibility = vsibility;
+    }
+
+    public ArrayList<Parameter> getParameters() {
+        return parameters;
+    }
+
+    public void setParameters(ArrayList<Parameter> parameters) {
+        this.parameters = parameters;
     }
 
     public String getName() {

@@ -6,8 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="77338bda-d7c8-4f4d-bd72-c2c4c6f251aa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/AttributController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/AttributController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/ClassController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/ClassController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/ClassView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/ClassView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/MethodController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/MethodController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/ParameterMethodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/ParameterMethodeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Class.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Method.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Method.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Parameter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Parameter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/AttributView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/AttributView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/MethodeView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/MethodeView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/ParameterMethodeView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/ParameterMethodeView.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,23 +43,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/COMPAQ/Desktop/SID_BD/S1/Base de donnees Repartie__ KOUTTI/jar_files&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/COMPAQ/Desktop/SID_BD/S1/Base de donnees Repartie__ KOUTTI/jar_files",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Main " type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -77,7 +86,8 @@
       <workItem from="1686398187556" duration="12592000" />
       <workItem from="1686428836359" duration="2348000" />
       <workItem from="1686431910785" duration="7571000" />
-      <workItem from="1686463771312" duration="4974000" />
+      <workItem from="1686463771312" duration="5625000" />
+      <workItem from="1686496884109" duration="25046000" />
     </task>
     <servers />
   </component>
